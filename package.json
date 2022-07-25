@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lerna run start",
     "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean --yes"
+    "clean": "lerna clean --yes",
+    "css": "lerna run css"
   },
   "keywords": [],
   "author": "",
