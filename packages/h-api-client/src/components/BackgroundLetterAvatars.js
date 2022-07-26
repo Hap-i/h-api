@@ -31,6 +31,8 @@ function stringAvatar(name) {
     return {
         sx: {
             bgcolor: stringToColor(name),
+            width: 30,
+            height: 30
         },
         children: children,
     };
