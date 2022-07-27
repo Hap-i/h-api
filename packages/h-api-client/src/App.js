@@ -1,8 +1,12 @@
 import Home from "./pages/Home";
-
+import useWindowDimensions from "./hooks/useWindowDimensions";
+import SmallWindow from "./pages/SmallWindow";
 function App() {
+  const { width } = useWindowDimensions();
   return (
-    <Home></Home>
+    <>
+      {width > 1000 ? <Home></Home> : <SmallWindow></SmallWindow>}
+    </>
   );
 }
 
