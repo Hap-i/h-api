@@ -2,7 +2,6 @@ import React from 'react'
 import SideBar from "./../SideBar";
 import BackgroundLetterAvatars from "../BackgroundLetterAvatars";
 import SearchIcon from "@mui/icons-material/Search";
-import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
@@ -30,9 +29,10 @@ function Allapps() {
                         />
                     </div>
                     <div>
-                        <Button variant="contained" size="small" endIcon={<AddIcon />}>
+                        <button className="bg-csTeal w-28 p-1 rounded-md text-csWhite hover:bg-opacity-80">
                             New app
-                        </Button>
+                            <AddIcon className='ml-1'></AddIcon>
+                        </button>
                     </div>
                 </div>
                 <div className="mt-5 text-csWhite text-sm">2 Apps</div>

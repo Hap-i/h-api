@@ -17,8 +17,8 @@ function HomeSideBar() {
                         <IconButton>
                             <DarkModeSharpIcon
                                 fontSize="large"
-                                color="primary"
-                            // sx={{ color: "#EEEEEE" }}
+                                // color="primary"
+                                sx={{ color: "#00ADB5" }}
                             ></DarkModeSharpIcon>
                         </IconButton>
                     </Tooltip>
