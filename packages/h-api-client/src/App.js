@@ -10,6 +10,7 @@ import InvalidPage from "./pages/InvalidPage";
 import AppRoles from "./pages/AppRoles";
 import AppCommits from "./pages/AppCommits";
 import AppGithub from "./pages/AppGithub";
+import AppInfo from "./pages/AppInfo";
 
 function App() {
   const { width } = useWindowDimensions();
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="app/:id" element={<AppDashboard />}>
+            <Route path="" element={<AppInfo />} />
             <Route path="settings" element={<AppSettings />} />
             <Route path="roles" element={<AppRoles />} />
             <Route path="Commits" element={<AppCommits />} />

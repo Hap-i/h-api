@@ -7,10 +7,10 @@ function AppDashboard() {
   let params = useParams();
   return (
     <div>
-      <AppSidebar></AppSidebar>
-      {/* <div>App ID: {params.id}</div>
-      <Link to={"settings"}>settings</Link>
-      <Outlet /> */}
+      <div className="flex">
+        <AppSidebar></AppSidebar>
+        <Outlet />
+      </div>
       <AppBottomBar />
     </div>
   );

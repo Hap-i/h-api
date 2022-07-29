@@ -7,9 +7,10 @@ import DarkModeSharpIcon from "@mui/icons-material/DarkModeSharp";
 import HelpOutlineSharpIcon from "@mui/icons-material/HelpOutlineSharp";
 import Tooltip from "@mui/material/Tooltip";
 import { AppSidebarData } from "./AppSidebarData";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function AppSidebar() {
+  let param = useParams();
   return (
     <SideBar height="h-screen" width="w-14" bgColor="bg-csBlack">
       <div className="flex flex-col h-full justify-between items-center">
@@ -19,7 +20,9 @@ function AppSidebar() {
             <hr className="border-csWhite w-8 m-auto" />
           </div>
           <div className="mt-10 pl-2 mb-1">
-            <BackgroundLetterAvatars name="Suvendu"></BackgroundLetterAvatars>
+            <Link to={`/app/${param.id}`}>
+              <BackgroundLetterAvatars name="Suvendu"></BackgroundLetterAvatars>
+            </Link>
           </div>
           <div>
             {AppSidebarData.map((menu) => (

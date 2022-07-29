@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 function AppBottomBar() {
   return (
-    <div className="fixed bottom-0 bg-csGrey w-full h-12 flex justify-between items-center">
+    <div className="fixed bottom-0 bg-cslightGrey w-full h-12 flex justify-between items-center">
       <div className="flex space-x-2 text-csWhite ml-5 text-sm">
         <div>Lat commit 12 days ago</div>
         <div>Build id: 098add9we</div>
