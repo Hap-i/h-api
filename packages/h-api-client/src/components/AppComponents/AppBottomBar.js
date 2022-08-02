@@ -10,7 +10,7 @@ function AppBottomBar() {
         <div>Lat commit 12 days ago</div>
         <div>Build id: 098add9we</div>
       </div>
-      <div className="flex items-center mr-5">
+      <div className="flex items-center mr-6">
         <div>
           <Tooltip title="Download" placement="top" arrow>
             <IconButton>
@@ -19,7 +19,7 @@ function AppBottomBar() {
           </Tooltip>
         </div>
         <div>
-          <button className="bg-csTeal text-csWhite w-36 rounded-md flex items-center justify-center space-x-2 p-1 ml-1 hover:opacity-80">
+          <button className="bg-csTeal text-csWhite w-36 rounded-sm flex items-center justify-center space-x-2 p-1 ml-1 hover:opacity-80">
             <div>Open Github</div>
             <div>
               <GitHubIcon fontSize="small" />

@@ -3,7 +3,7 @@ import React from "react";
 function SmallWindow() {
   return (
     <div className="bg-csBlack h-screen w-screen">
-      <div class="grid h-screen place-items-center">
+      <div className="grid h-screen place-items-center">
         <div>
           <img className="h-80" src="smallWindow/smallWindow.svg" alt="" />
           <div className="text-csWhite mt-5 text-xl text-center">
